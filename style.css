@@ -1,0 +1,32 @@
+body{            
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'pao pao pao pao pizza'
+    'agua agua agua agua pizza'
+    'mel mel mel  mel pizza '
+    'cafe cafe cafe cafe cafe';
+    grid-template-rows: 20vh 5vh 50vh 25vh;
+    grid-gap: 10px;    
+}
+header{
+    grid-area: pao;
+    background-color: blue;
+}
+
+nav{
+    grid-area: agua;
+    background-color: blueviolet;
+}
+section{
+    grid-area: mel;
+    background-color: aqua;
+}
+aside{
+    grid-area: pizza ;
+    background-color:palevioletred;  
+}
+
+footer{
+    grid-area: cafe;
+    background-color: crimson;
+}
