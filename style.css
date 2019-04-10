@@ -1,32 +1,67 @@
 body{            
     margin: 0;
     display: grid;
-    grid-template-areas: 'pao pao pao pao pizza'
-    'agua agua agua agua pizza'
-    'mel mel mel  mel pizza '
-    'cafe cafe cafe cafe cafe';
-    grid-template-rows: 20vh 5vh 50vh 25vh;
+    grid-template-areas: 'pao pao pao pizza'
+    'agua agua agua pizza'
+    'mel mel mel pizza '
+    'cafe cafe cafe cafe';
+    grid-template-rows: 20vh 5vh 60vh 25vh;
     grid-gap: 10px;    
+    grid-template-columns: 24vw 24vw 24vw 24vw;
 }
 header{
     grid-area: pao;
-    background-color: blue;
+    background-color: #fe017e; 
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 100px;
+    height: 100%;
+    border-radius: 100%;
 }
 
 nav{
     grid-area: agua;
-    background-color: blueviolet;
+    background-color:rgb(255, 0, 98);
+    
+    display: flex;
+    justify-content: space-around;
+    
 }
+nav a {
+    color: burlywood;
+    text-decoration: none;
+    font-size: 16pt;
+}
+
 section{
     grid-area: mel;
-    background-color: aqua;
+    background-image: url("img/download.jfif");
+    background-size: unset;
+
 }
 aside{
     grid-area: pizza ;
     background-color:palevioletred;  
+    text-align: center;
+    padding:0 20px;
+}
+aside h2{
+    font-family: 'Exo 2' sans-serif;
 }
 
 footer{
     grid-area: cafe;
-    background-color: crimson;
+    background-color: rgb(219, 126, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
 }
